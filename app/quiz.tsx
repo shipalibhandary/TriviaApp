@@ -1,7 +1,9 @@
 import { useRouter } from "expo-router";
 import { useEffect, useState } from "react";
-import { ActivityIndicator, StyleSheet, Text, TouchableOpacity, View, } from "react-native";
-import { fetchQuestions } from "../services/quiz.ts";
+import {
+    ActivityIndicator, StyleSheet, Text, TouchableOpacity, View,
+} from "react-native";
+import { fetchQuestions } from "../services/quiz";
 
 export default function Quiz() {
   const router = useRouter();
@@ -33,7 +35,7 @@ export default function Quiz() {
     setSelected(option);
 
     if (option === questions[currentIndex].correct_answer) {
-      setScore(score + 1);
+        setScore((prev) => prev + 1);
     }
   };
 
@@ -43,7 +45,7 @@ export default function Quiz() {
       setSelected(null);
     } else {
       router.replace({
-        pathname: "./result",
+        pathname: "/result",
         params: { score: score.toString(), total: questions.length.toString() },
       });
     }
@@ -117,6 +119,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: "#fff",
+    paddingTop: 60,
   },
   progress: {
     marginBottom: 10,
@@ -125,24 +128,29 @@ const styles = StyleSheet.create({
   question: {
     fontSize: 18,
     marginBottom: 20,
+    textAlign: "center",
   },
   option: {
     padding: 15,
     borderWidth: 1,
+    width: "70%",
     borderRadius: 10,
     marginBottom: 10,
+    alignSelf: "center",
   },
   correct: {
-    backgroundColor: "#d4edda",
+    backgroundColor: "#99eead",
   },
   wrong: {
-    backgroundColor: "#f8d7da",
+    backgroundColor: "#f4717c",
   },
   nextButton: {
-    backgroundColor: "#4c6ef5",
+    backgroundColor: "#eeaaaa",
     padding: 15,
     borderRadius: 10,
     marginTop: 20,
+    width: "80%",        
+    alignSelf: "center",
   },
   nextText: {
     color: "#fff",
