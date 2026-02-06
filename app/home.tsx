@@ -10,13 +10,13 @@ export default function Home() {
 
       <TouchableOpacity
         style={styles.card}
-        onPress={() => router.push("/quiz")}>
+        onPress={() => router.push("./quiz")}>
         <Text style={styles.cardTitle}>Trivia Quiz</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.card}
-        onPress={() => router.push("/profile")}>
+        onPress={() => router.push("./profile")}>
         <Text style={styles.cardTitle}>Profile</Text>
       </TouchableOpacity>
 
