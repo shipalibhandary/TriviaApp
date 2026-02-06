@@ -22,10 +22,39 @@ export default function Result() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "center", alignItems: "center", padding: 20 },
-  title: { fontSize: 22, fontWeight: "600", marginBottom: 12 },
-  score: { fontSize: 18, marginBottom: 20 },
-  button: { backgroundColor: "#4c6ef5", paddingVertical: 12, paddingHorizontal: 30, borderRadius: 8, marginBottom: 10 },
-  buttonAlt: { backgroundColor: "#333", paddingVertical: 12, paddingHorizontal: 30, borderRadius: 8 },
-  buttonText: { color: "#fff", fontWeight: "700", textAlign: "center" },
+  container: { 
+    flex: 1, 
+    justifyContent: "center", 
+    alignItems: "center", 
+    padding: 20 
+},
+  title: { 
+    fontSize: 22, 
+    fontWeight: "600", 
+    marginBottom: 12 
+},
+  score: { 
+    fontSize: 18, 
+    marginBottom: 20 
+},
+  button: { 
+    backgroundColor: "#eeaaaa", 
+    paddingVertical: 12, 
+    paddingHorizontal: 30, 
+    borderRadius: 8, 
+    marginBottom: 10, 
+    width: "70%",
+},
+  buttonAlt: { 
+    backgroundColor: "#eeaaaa", 
+    paddingVertical: 12, 
+    paddingHorizontal: 30, 
+    borderRadius: 8, 
+    width: "70%",
+},
+  buttonText: { 
+    color: "#fff", 
+    fontWeight: "700", 
+    textAlign: "center" 
+},
 });
