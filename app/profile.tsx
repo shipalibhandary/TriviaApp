@@ -13,6 +13,7 @@ export default function Profile() {
         <Row label="Email" value="shipali@gmail.com" />
       </View>
 
+
       <TouchableOpacity
         style={[styles.button, styles.homeBtn]}
         onPress={() => router.replace("/home")}>
@@ -73,10 +74,10 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   homeBtn: {
-    backgroundColor: "#111827",
+    backgroundColor: "#eeaaaa",
   },
   buttonText: {
-    color: "#fff",
+    color: "black",
     textAlign: "center",
     fontWeight: "bold",
     fontSize: 16,
