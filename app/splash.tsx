@@ -1,13 +1,13 @@
 import { useRouter } from "expo-router";
 import { useEffect } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function Splash() {
     const router = useRouter();
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.replace("/home");
+            router.replace("./login");
         }, 2000);
 
         return () => clearTimeout(timer);
@@ -15,6 +15,10 @@ export default function Splash() {
 
     return (
         <View style={styles.container}>
+            <Image
+                source={require("@/assets/images/quizlogo.png")}
+                style={styles.logo}
+            />
             <Text style={styles.title}>Welcome to Trivia Quiz App!</Text>
         </View>
     );
@@ -27,10 +31,17 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#4A90E2',
     },
+    logo: {
+        width: 120,
+        height: 120,
+        marginBottom: 20,
+    },
     title:{
         fontSize: 32,
         fontWeight: 'bold',
         color: '#FFFFFF',
+        justifyContent: 'center',
+        alignItems: 'center',
 
     },
 });
