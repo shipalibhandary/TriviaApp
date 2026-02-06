@@ -21,7 +21,7 @@ export default function Home() {
       </TouchableOpacity>
 
       <TouchableOpacity
-        style={[styles.card, styles.logout]}
+        style={[styles.card]}
         onPress={() => router.replace("./login")}>
         <Text style={styles.cardTitle}>Logout</Text>
       </TouchableOpacity>
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   card: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "#ecb2b2",
     padding: 20,
     borderRadius: 12,
     marginBottom: 20,
@@ -54,7 +54,5 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
   },
-  logout: {
-    backgroundColor: "#ffe5e5",
-  },
+
 });
