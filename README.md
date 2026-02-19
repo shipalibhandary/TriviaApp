@@ -24,7 +24,7 @@ This project was created as part of a mobile app assignment to demonstrate:
 ## 📂 App Flow
 Splash Screen -> Login Screen -> Home Screen -> Trivia Quiz Screen -> Result Screen
 
-## API Used
+## 🔌 API Used
 Open Trivia Database API
 
 Example endpoint:
@@ -50,5 +50,18 @@ npm install
 ```
 npx expo start
 ```
+
 Scan the QR code using:
 - Expo Go OR
+
+## 📦 Build APK (EAS)
+- Development build
+  ```
+  eas build -p android --profile development
+  ```
+
+- Production APK
+  ```
+  eas build -p android --profile production
+  ```
+  After build completes, Expo provides a link/QR code to install the app.
