@@ -20,3 +20,17 @@ This project was created as part of a mobile app assignment to demonstrate:
 - Splash Screen
 - API Integration (Open Trivia API)
 - Android APK build using Expo EAS
+
+## 📂 App Flow
+Splash Screen -> Login Screen -> Home Screen -> Trivia Quiz Screen -> Result Screen
+
+## API Used
+Open Trivia Database API
+
+Example endpoint:
+https://opentdb.com/api.php?amount=5&type=multiple
+
+The app fetches:
+- Question
+- Correct Answer
+- Incorrect Answers
