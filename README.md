@@ -11,7 +11,7 @@ This project was created as part of a mobile app assignment to demonstrate:
 - Basic state management
 - Mobile UI development
 
-## Features
+## ✨ Features
 - Login Screen (UI only)
 - Home Screen with navigation cards
 - Trivia Quiz (MCQ with 4 options)
@@ -34,3 +34,21 @@ The app fetches:
 - Question
 - Correct Answer
 - Incorrect Answers
+
+## ⚙️ Installation & Setup
+1. Clone the project
+```
+git clone <repository-link>
+cd TriviaApp
+```
+2. Install dependencies
+```
+npm install
+```
+
+3. Start development server
+```
+npx expo start
+```
+Scan the QR code using:
+- Expo Go OR
