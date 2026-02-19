@@ -10,3 +10,13 @@ This project was created as part of a mobile app assignment to demonstrate:
 - Navigation flow
 - Basic state management
 - Mobile UI development
+
+## Features
+- Login Screen (UI only)
+- Home Screen with navigation cards
+- Trivia Quiz (MCQ with 4 options)
+- Result Screen
+- Profile Screen
+- Splash Screen
+- API Integration (Open Trivia API)
+- Android APK build using Expo EAS
