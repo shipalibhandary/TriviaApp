@@ -66,5 +66,5 @@ Scan the QR code using:
   ```
   After build completes, Expo provides a link/QR code to install the app.
 
-  ## 👩‍💻 Author
+## 👩‍💻 Author
 Developed by Shipali
